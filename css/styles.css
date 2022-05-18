@@ -163,7 +163,7 @@ img {
     color: var(--accent-color);
 }
 
-.navigation-list .link::after {
+.navigation-list .link.current::after {
     position: absolute;
     bottom: 0;
     right: 0;
