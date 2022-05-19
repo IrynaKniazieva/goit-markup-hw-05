@@ -241,6 +241,54 @@ img {
     background-color: #188CE8;
 }
 
+/* модальное окно */
+
+.backdrop {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+
+    width: 528px;
+    height: 581px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-button {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: var(--white-color);
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 /* секции особенности  */
 
@@ -314,6 +362,7 @@ img {
 
 .section .item-about {
     position: relative;
+   
     
 
     margin-right: 30px;
@@ -322,6 +371,9 @@ img {
   .section .item-about:last-child {
     margin-right: 0;
   }
+
+
+
 
   .section .item-about::before {
       position: absolute;
@@ -332,6 +384,30 @@ img {
       width: 100%;
       height: 70px;
       background-color: rgba(47, 48, 58, 0.8) ;
+  } 
+
+.container-lebel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 70px;
+}
+
+  .lebel {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
   }
 
 /* секция Наша команда */
