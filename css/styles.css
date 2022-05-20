@@ -709,14 +709,7 @@ color: var(--white-color);
 
 /* Portfolio */
 
-/* .portfolio-section {
-    padding-top: 94px;
-    
-} */
 
-/* .container-button-list {
-    margin-bottom: 48px;
-} */
 
 .button-list {
     margin-bottom: 48px;
@@ -805,6 +798,7 @@ color: var(--white-color);
 
 .section .item-project {
     position: relative;
+
 }
 
 .section .item-project::before {
@@ -819,11 +813,17 @@ color: var(--white-color);
     
 }
 
-.list-projects .description {
+.description {
     position: absolute;
+    content: "";
     top: 0;
     left: 0;
-    content: "";
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+
 
     font-family: 'Roboto';
     font-style: normal;
@@ -834,5 +834,8 @@ color: var(--white-color);
 
     color: var(--white-color);
 }
+
+
+    
 
 
